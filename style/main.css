@@ -1,0 +1,62 @@
+:root{/*declarando a variavel no inicio para facilitar o uso futuro lembrando que ja tem emmente toda a gama de cores que sera usado*/
+    --vermelho:#C30914;
+    --preta:#141414;
+}
+*{/*asterisco se refere a todo documento */
+    margin: 0;/*para nao ter espaçamentos  indevidos inicia se com 0*/
+    padding: 0;/*para nao ter espaçamentos  indevidos inicia se com 0*/
+    box-sizing: border-box;/*limita tudo dentro da caixa a ser a borda da caixa o limite*/
+
+}
+
+body {
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+   display: flex; /* por padrao organixa em linha vertical*/
+   flex-direction: row; /* por padrao flex ja vem row nao necessita colocar*/
+   align-items: center; /* alinhamento ao centro*/
+   justify-content: space-between; /* cria espaço entre elementos */
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'arial black', 'Times New Roman', Times;
+    font-size: 40px;
+
+}
+
+header nav a{ /*criando ancora para detalhar as letras,cores e etc */
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{ /*ancora para detalhar a passagem do mouse em cimado icone e destacar algo */
+    color: #ffff ;
+}
+/* filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/recursos/Round\ 6.jpg');/* usando a img de fundo dentro da box como img de fundo*/
+    /* linear-gradient é para melhora o constraste para melhor apresentação de letras*/
+    height: 400px;
+    background-size: cover;/*size determina que a img ficara do tamanho da box, forçando a cobrir todo espaço */
+    display: flex;
+    flex-direction: column;/* por padrao vem em row linha ou sej vertical em coluna fica horizontal*/
+    justify-content: center;
+    align-items: flex-start;/*sempre se inverte dependendo da direção*/
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 40px;
+}

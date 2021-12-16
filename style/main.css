@@ -77,6 +77,11 @@ header nav a:hover{ /*ancora para detalhar a passagem do mouse em cimado icone e
     cursor: pointer;
     transition: 2s ease all;/*cuida da parte de animação de uma parte a outra  */
 }
+
+.botao a{
+    color: white;
+}
+
 .botao:hover{
     background-color: white;
     color: black;
